@@ -1,7 +1,9 @@
 language: node_js
-node_js:
-  - "0.10"
-env:
-  - NODE_ENV=travis
+sudo: false
 services:
-  - mongodb
+  - mysql
+node_js:
+  - '0.12'
+  - '4'
+script: 
+  - npm test

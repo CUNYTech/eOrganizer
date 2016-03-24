@@ -4,7 +4,8 @@ module.exports = function(sequelize, DataTypes) {
 
 	var Article = sequelize.define('Article', {
 			title: DataTypes.STRING,
-			content: DataTypes.TEXT
+			content: DataTypes.TEXT,
+			isPrivate: DataTypes.BOOLEAN
 		},
 		{
 			associate: function(models){

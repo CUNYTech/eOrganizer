@@ -12,10 +12,18 @@
 				<textarea data-ng-model="content" id="content" cols="30" rows="10" placeholder="Content"></textarea>
 			</div>
 		</div>
+	    <div class="control-group">
+	    	<label class="control-label">Private Event?</label>
+	    	<div class="controls">
+	        	<label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'Left'">Yes</label>
+	        	<label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'Right'">No</label>
+	        </div>
+    	</div>
 		<div class="control-group">
 			<div class="controls">
 				<input type="submit" class="btn">
 			</div>
 		</div>
+
 	</form>
 </section>

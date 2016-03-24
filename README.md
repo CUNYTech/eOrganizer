@@ -1,5 +1,5 @@
 # Getting Started
-
+[![Build Status](https://travis-ci.org/CUNYTech/eOrganizer.svg?branch=master)](https://travis-ci.org/CUNYTech/eOrganizer)
 Alright now the fun begins. First clone or download the repo to your computer. 
 
 1. Clone the repository ```git clone git@github.com:jpotts18/mean-stack-relational.git```.

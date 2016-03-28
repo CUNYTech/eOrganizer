@@ -1,10 +1,21 @@
-# Getting Started
+### Project forked from: https://github.com/jpotts18/mean-stack-relational
+
+## Prerequisites
 [![Build Status](https://travis-ci.org/CUNYTech/eOrganizer.svg?branch=master)](https://travis-ci.org/CUNYTech/eOrganizer)
+- Node.js - Download and Install Node.js. You can also follow [this gist](https://gist.github.com/isaacs/579814) for a quick and easy way to install Node.js and npm
+- MySQL - Download and Install MySQL - Make sure it's running on the default port (3306).
 
-Alright now the fun begins. First clone or download the repo to your computer. 
+### Tool Prerequisites
+- NPM - Node.js package manager, should be installed when you install node.js.
 
-1. Clone the repository ```git clone git@github.com:jpotts18/mean-stack-relational.git```.
-1. Go into the repository ```cd mean-stack-relational/```.
+- Bower - Web package manager, installing Bower is simple when you have npm:
+``` npm install -g bower ```
+
+# Getting Started
+
+1. Clone the repository
+1. Make sure you create the MySQL Database named ```mean_relational```
+1. Go into the repository
 1. Install dependencies with NPM ```npm install```. This will copy development.json5, and production.json5 from respective sample files in the config/env folder and run the grunt copy task to copy frontend lib files to their destination.
 1. Plug in your private and public keys for working with FB and Twitter into ```/config/env/development.json5``` and/or ```/config/env/development.json5```.
 1. Wire up the database connection found in ```/config/env/development.json5``` and/or ```/config/env/production.json5```.
@@ -12,18 +23,7 @@ Alright now the fun begins. First clone or download the repo to your computer.
 1. Run in development mode with grunt: ```grunt```
 1. Make something awesome!
 
-Thats all! Now go and open up your browser at [http://localhost:3000](http://localhost:3000), and tweet [@jpotts18](http://twitter.com/jpotts18) to say thanks!
-
-
-## Prerequisites
-- Node.js - Download and Install Node.js. You can also follow [this gist](https://gist.github.com/isaacs/579814) for a quick and easy way to install Node.js and npm
-- MySQL - Download and Install MySQL - Make sure it's running on the default port (3306).
-
-### Tool Prerequisites
-- NPM - Node.js package manager, should be installed when you install node.js. NPM (Node Package Manager) will look at the [package.json](https://github.com/jpotts18/mean-stack-relational/blob/master/package.json) file in the root of the project and download all of the necessary dependencies and put them in a folder called ```node_modules```
-
-- Bower - Web package manager, installing Bower is simple when you have npm:
-``` npm install -g bower ```
+Thats all! Now go and open up your browser at [http://localhost:3000](http://localhost:3000)
 
 ### NPM Modules Used
 - [Passport](http://passportjs.org/) - Passport is authentication middleware for Node.js. Extremely flexible and modular, Passport can be unobtrusively dropped in to any Express-based web application. A comprehensive set of strategies support authentication using a username and password, Facebook, Twitter, and more. 

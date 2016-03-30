@@ -1,6 +1,6 @@
 <section data-ng-controller="ArticlesController" data-ng-init="find()">
 	<ul class="articles unstyled">
-		<li data-ng-repeat="article in articles">
+		<li data-ng-show="global.user.id == article.User.id" data-ng-repeat="article in articles">
 			<span>{{article.updatedAt | date:'medium'}}</span> /
 			<span>{{article.User.name}}</span>
 			<h2><a data-ng-href="#!/articles/{{article.id}}">{{article.title}}</a></h2>

@@ -2,7 +2,7 @@ angular.module('mean.system').controller('HeaderController', ['$scope', 'Global'
     $scope.global = Global;
 
     $scope.menu = [{
-        "title": "Events",
+        "title": "My Events",
         "link": "articles"
     }, {
         "title": "Create New Event",

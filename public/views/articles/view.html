@@ -2,6 +2,7 @@
     <span>{{article.updatedAt | date:'medium'}}</span>/
     <span>{{article.User.name}}</span>
     <h2>{{article.title}}</h2>
+    <div>{{article.content}}</div>
     <div data-ng-show="global.user.id == article.User.id">
         <a class="btn" href="/#!/articles/{{article.id}}/edit">
         	Edit
@@ -10,5 +11,4 @@
             Delete
         </a>
     </div>
-    <div>{{article.content}}</div>
 </section>

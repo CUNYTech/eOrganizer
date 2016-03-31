@@ -1,7 +1,7 @@
 ### Project forked from: https://github.com/jpotts18/mean-stack-relational
 
 ## Prerequisites
-[![Build Status](https://travis-ci.org/CUNYTech/eOrganizer.svg?branch=master)](https://travis-ci.org/CUNYTech/eOrganizer)
+[![Build Status](https://travis-ci.org/CUNYTech/eOrganizer.svg?branch=master)](https://travis-ci.org/CUNYTech/eOrganizer)[![Code Climate](https://codeclimate.com/github/Apedneka/eOrganizer/badges/gpa.svg)](https://codeclimate.com/github/Apedneka/eOrganizer)
 - Node.js - Download and Install Node.js. You can also follow [this gist](https://gist.github.com/isaacs/579814) for a quick and easy way to install Node.js and npm
 - MySQL - Download and Install MySQL - Make sure it's running on the default port (3306).
 

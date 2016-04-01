@@ -15,8 +15,10 @@
 	    <div class="control-group">
 	    	<label class="control-label">Private Event?</label>
 	    	<div class="controls">
-	        	<label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'Left'">Yes</label>
-	        	<label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'Right'">No</label>
+				<label data-ng-repeat="choice in question.choices">
+  					<input type="radio" name="response" data-ng-model="choice.isUserAnswer" data-ng-value="true" />
+  				{{choice.text}}
+			</label>
 	        </div>
     	</div>
 		<div class="control-group">

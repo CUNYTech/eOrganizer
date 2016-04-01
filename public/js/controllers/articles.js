@@ -1,7 +1,19 @@
 angular.module('mean.articles').controller('ArticlesController', ['$scope', '$routeParams', '$location', 'Global', 'Articles', function ($scope, $routeParams, $location, Global, Articles) {
     $scope.global = Global;
 
-    $scope.create = function() {
+    $scope.question = {
+        choices: [{
+                id: 1,
+                text: "Yes",
+                isUserAnswer: "true"
+            }, {
+                id: 2,
+                text: "No",
+                isUserAnswer: "false"
+            }]
+    };
+
+    $scope.create = function() {   
         var article = new Articles({
             title: this.title,
             content: this.content

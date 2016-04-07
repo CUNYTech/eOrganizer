@@ -1,0 +1,67 @@
+<section data-ng-controller="HeaderController" data-ng-init="getProfile()">
+	<form class="form-horizontal" data-ng-submit="updateProfile()" method="post" enctype="multipart/form-data" action ="/profile">
+        <div>
+
+          <div class="profile-userpic">
+          <img src=''>
+            <a class="btn btn-sq-lg btn-primary">
+                <i class="fa fa-user fa-5x"></i> 
+                </a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 <img src="./img/cunycode/coins.png" alt="cunycoins">
+                 CUNY Coins: <span id="cunyCoins">  </span>
+            </div>
+            
+          <br>
+          <div class="control-group">
+          <label class="control-label" for="upload"> Upload profile picture:</label>
+            <div class="controls">
+             <input type="file" name="file" style="text-align: center;">
+            </div>
+          </div>
+
+		  <div class="control-group">
+			<label class="control-label" for="name">Full Name</label>
+			<div class="controls">
+				<input type="text" id="username" data-ng-mode="global.user.username" placeholder="{{global.user.username}}" required> 
+			</div>
+          </div>
+
+		<div class="control-group">
+			<label class="control-label" for="email">Email</label>
+			<div class="controls">
+				<input type="text" data-ng-model="email" id="email" placeholder="{{global.user.email}}" required>
+			</div>
+		</div>
+
+        <div class="control-group">
+            <label class="control-label" for="password">Password</label>
+            <div class="controls">
+                <input type="text" data-ng-model="password" id="password" placeholder="{{global.user.hashedPassword}}" required>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="school">School</label>
+            <div class="controls">
+                <input type="text" data-ng-model="school" id="school" placeholder="school">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="major"> Major </label>
+            <div class="controls">
+                <input type="text" data-ng-model="major" id="major" placeholder="major">
+            </div>
+        </div>
+	
+             <button id="end" type="submit" class="btn btn-success btn-lg">Save</button>
+             <a class="btn btn-danger btn-lg" href="/#/profile">
+             Cancel
+            </a>
+
+        </button>
+      </div>
+
+	</form>
+</section>
+            

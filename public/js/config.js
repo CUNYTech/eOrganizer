@@ -17,6 +17,12 @@ angular.module('mean').config(['$routeProvider',
         when('/', {
             templateUrl: 'views/index.html'
         }).
+        when('/profile', {
+            templateUrl: 'views/profile/profile.html'
+        }).
+        when('/profile/edit', {
+            templateUrl: 'views/profile/edit.html'
+        }).
         otherwise({
             redirectTo: '/'
         });
@@ -26,6 +32,6 @@ angular.module('mean').config(['$routeProvider',
 //Setting HTML5 Location Mode
 angular.module('mean').config(['$locationProvider',
     function($locationProvider) {
-        $locationProvider.hashPrefix("!");
+        $locationProvider.hashPrefix();
     }
 ]);

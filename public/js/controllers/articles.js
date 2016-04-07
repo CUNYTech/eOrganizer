@@ -1,5 +1,12 @@
 angular.module('mean.articles').controller('ArticlesController', ['$scope', '$routeParams', '$location', 'Global', 'Articles', function ($scope, $routeParams, $location, Global, Articles) {
     $scope.global = Global;
+    // console.log(Global.user.name);
+
+    // $scope.info = {
+    //     choices: [{
+    //             name: Global.user.name
+    //         }]
+    // };
 
     $scope.question = {
         choices: [{

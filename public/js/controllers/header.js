@@ -7,7 +7,11 @@ angular.module('mean.system').controller('HeaderController', ['$scope', 'Global'
     }, {
         "title": "Create New Event",
         "link": "articles/create"
+    },
+    {
+    	"title": "My Profile",
+    	"link": "/profile/profile"
     }];
     
-    $scope.isCollapsed = false;
+    $scope.isCollapsed = true;
 }]);

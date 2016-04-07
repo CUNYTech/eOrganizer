@@ -1,7 +1,7 @@
 {
     "name": "e-Organizer",
     "description": "",
-    "repository": "https://github.com/jpotts18/mean-stack-relational.git",
+    "repository": "https://github.com/apedneka/mean-stack-relational.git",
     "logo": "https://raw.githubusercontent.com/jpotts18/mean-stack-relational/master/public/img/m_logo.png",
     "keywords": ["node", "express", "static"],
     "env": {

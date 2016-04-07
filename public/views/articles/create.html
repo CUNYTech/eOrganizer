@@ -15,17 +15,14 @@
 	    <div class="control-group">
 	    	<label class="control-label">Private Event?</label>
 	    	<div class="controls">
-				<label data-ng-repeat="choice in question.choices">
-  					<input type="radio" name="response" data-ng-model="choice.isUserAnswer" data-ng-value="true" />
-  				{{choice.text}}
-			</label>
-	        </div>
+        		<input name="response" type="radio" ng-model="theBoolean" value="true">Yes
+        		<input name="response" type="radio" ng-model="theBoolean" value="false">No
+			</div>
     	</div>
 		<div class="control-group">
 			<div class="controls">
 				<input type="submit" class="btn">
 			</div>
 		</div>
-
 	</form>
 </section>

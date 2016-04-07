@@ -1,7 +1,7 @@
 <section data-ng-controller="ArticlesController" data-ng-init="find()">
 	<h1>Here are some events that are going on!</h1><br>
 	<ul class="articles unstyled">
-		<li data-ng-repeat="article in articles">
+		<li data-ng-repeat="article in articles" data-ng-hide="article.isPrivate==true" >
 			<h3><a data-ng-href="#!/articles/{{article.id}}">{{article.title}}</a></h3>			
 			<p>Hosted by {{article.User.name}}</p>
 		</li>

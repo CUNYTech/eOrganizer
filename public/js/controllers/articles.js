@@ -1,6 +1,6 @@
 angular.module('mean.articles').controller('ArticlesController', ['$scope', '$routeParams', '$location', 'Global', 'Articles', function ($scope, $routeParams, $location, Global, Articles) {
     $scope.global = Global;
-
+        
     $scope.theBoolean=true;
 
     $scope.create = function() {   
@@ -11,7 +11,6 @@ angular.module('mean.articles').controller('ArticlesController', ['$scope', '$ro
         });
 
         article.$save(function(response) {
-            console.log(response);
             $location.path("articles/" + response.id);
         });
 
@@ -60,4 +59,7 @@ angular.module('mean.articles').controller('ArticlesController', ['$scope', '$ro
             $scope.article = article;
         });
     };
+
+    $scope.haha = function() {
+    };    
 }]);

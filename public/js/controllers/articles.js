@@ -1,33 +1,16 @@
 angular.module('mean.articles').controller('ArticlesController', ['$scope', '$routeParams', '$location', 'Global', 'Articles', function ($scope, $routeParams, $location, Global, Articles) {
     $scope.global = Global;
-    // console.log(Global.user.name);
-
-    // $scope.info = {
-    //     choices: [{
-    //             name: Global.user.name
-    //         }]
-    // };
-
-    $scope.question = {
-        choices: [{
-                id: 1,
-                text: "Yes",
-                isUserAnswer: "true"
-            }, {
-                id: 2,
-                text: "No",
-                isUserAnswer: "false"
-            }]
-    };
+        
+    $scope.theBoolean=true;
 
     $scope.create = function() {   
         var article = new Articles({
             title: this.title,
-            content: this.content
+            content: this.content,
+            isPrivate: $scope.theBoolean
         });
 
         article.$save(function(response) {
-            console.log(response);
             $location.path("articles/" + response.id);
         });
 
@@ -76,4 +59,7 @@ angular.module('mean.articles').controller('ArticlesController', ['$scope', '$ro
             $scope.article = article;
         });
     };
+
+    $scope.haha = function() {
+    };    
 }]);

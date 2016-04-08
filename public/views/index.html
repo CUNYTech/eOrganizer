@@ -2,9 +2,9 @@
 	<h1>Here are some events that are going on!</h1><br>
 	<ul class="articles unstyled">
 		<li data-ng-repeat="article in articles">
-			<h3><a data-ng-href="#!/articles/{{article.id}}">{{article.title}}</a></h3>			
+			<h3><a data-ng-href="#/articles/{{article.id}}">{{article.title}}</a></h3>			
 			<p>Hosted by {{article.User.name}}</p>
 		</li>
 	</ul>
-	<h1 data-ng-hide="!articles || articles.length">No articles yet. <br> Why don't you <a href="/#!/articles/create">Create One</a>?</h1>
+	<h1 data-ng-hide="!articles || articles.length">No articles yet. <br> Why don't you <a href="/#/articles/create">Create One</a>?</h1>
 </section>

@@ -1,4 +1,6 @@
-<section data-ng-controller="HeaderController" data-ng-init="getProfile()">
+<div class="container-fluid">
+<div class="col-lg-2" style="">
+<section data-ng-controller="HeaderController" data-ng-init="">
       <div class="row">
          <div>
           <div class="profile-userpic">
@@ -8,7 +10,7 @@
                 </a>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                  <img src="./img/cunycode/coins.png" alt="cunycoins">
-                 CUNY Coins: <span id="cunyCoins" style="font-size:50px;">  1000 </span>
+                 CUNY Coins: <span id="cunyCoins" style="font-size:50px;"> <a href="/#/profile/history"> {{global.user.cunyCoins}} </a> </span>
             </div>
 
           <br>
@@ -23,22 +25,30 @@
 		</div>
 
         <div class="control-group">
-      School:   <span style ="font-size: 25px;">  &nbsp; The City College</span>
-    </div>
+      School:   <span style ="font-size: 25px;">  &nbsp; {{global.user.school}} </span>
+        </div>
         
         <div class="control-group">
-        Major :  <span style ="font-size: 25px;">  &nbsp; Computer Science</span>
+        Major :  <span style ="font-size: 25px;">  &nbsp; {{global.user.major}}</span>
         </div>
+
 		
            <a class="btn btn-danger btn-lg" href="/#/profile/edit">
 		         Edit
             </a>
       
       </div>
+ <!-- <div> <img src ="./img/cunycode/network.png"> </div> -->
 
-      <div> <img src ="./img/cunycode/network.png"> </div>
-
-      <div>
 </section>
-
-
+</div>
+<br>
+<br>
+<div> 
+<img class="logo" src ="./img/cunycode/research.png"> <img class="logo" src ="./img/cunycode/jobfair.png"> <img class="logo" src ="./img/cunycode/seminar.png"> <img class="logo" src ="./img/cunycode/club.png"> <img class="logo" src ="./img/cunycode/STEM_Research.png"> 
+<br>
+<img class="logo" src ="./img/cunycode/Volunteer.png"> 
+<img class="logo" src ="./img/cunycode/study_group.png"> 
+<img class="logo" src ="./img/cunycode/Hackathon.png"> 
+</div>
+</div>

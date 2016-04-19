@@ -1,5 +1,7 @@
-<section data-ng-controller="HeaderController" data-ng-init="getProfile()">
-	<form class="form-horizontal" data-ng-submit="updateProfile()" method="post" enctype="multipart/form-data" action ="/profile">
+<div class="container-fluid">
+<div class="col-lg-6">
+<section data-ng-controller="HeaderController" data-ng-init="">
+    <form class="form-horizontal" data-ng-submit="updateProfile()" enctype="multipart/form-data">
         <div>
 
           <div class="profile-userpic">
@@ -9,7 +11,7 @@
                 </a>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                  <img src="./img/cunycode/coins.png" alt="cunycoins">
-                 CUNY Coins: <span id="cunyCoins">  </span>
+                 CUNY Coins: <span id="cunyCoins"> {{global.user.cunyCoins}} </span>
             </div>
             
           <br>
@@ -23,45 +25,52 @@
 		  <div class="control-group">
 			<label class="control-label" for="name">Full Name</label>
 			<div class="controls">
-				<input type="text" id="username" data-ng-mode="global.user.username" placeholder="{{global.user.username}}" required> 
+				<input type="text" id="username" data-ng-mode="user.username" placeholder="{{global.user.username}}" required> 
 			</div>
           </div>
 
 		<div class="control-group">
 			<label class="control-label" for="email">Email</label>
 			<div class="controls">
-				<input type="text" data-ng-model="email" id="email" placeholder="{{global.user.email}}" required>
+				<input type="text" data-ng-model="user.email" id="email" placeholder="{{global.user.email}}" required>
 			</div>
 		</div>
 
-        <div class="control-group">
+        <!-- <div class="control-group">
             <label class="control-label" for="password">Password</label>
             <div class="controls">
-                <input type="text" data-ng-model="password" id="password" placeholder="{{global.user.hashedPassword}}" required>
+                <input type="text" data-ng-model="global.user.password" id="password" placeholder="{{global.user.hashedPassword}}" required>
             </div>
-        </div>
+        </div> -->
 
         <div class="control-group">
             <label class="control-label" for="school">School</label>
             <div class="controls">
-                <input type="text" data-ng-model="school" id="school" placeholder="school">
+                <input type="text" data-ng-model="user.school" id="school" placeholder="{{global.user.school}}">
             </div>
         </div>
         <div class="control-group">
             <label class="control-label" for="major"> Major </label>
             <div class="controls">
-                <input type="text" data-ng-model="major" id="major" placeholder="major">
+                <input type="text" data-ng-model="user.major" id="major" placeholder="{{global.user.major}}">
             </div>
         </div>
 	
-             <button id="end" type="submit" class="btn btn-success btn-lg">Save</button>
-             <a class="btn btn-danger btn-lg" href="/#/profile">
-             Cancel
-            </a>
+          <div class="control-group">
+             <div class="controls">
+               <button ng-onlick="updateProfile()" class="btn btn-success btn-lg"> Submit </button>
+               <a class="btn btn-danger btn-lg" href="/#/profile/profile">Cancel</a>
+            </div>
+         </div>
 
+             </div>
+            <!--  <button type="submit" class="btn btn-success btn-lg">Save</button> -->
+             
         </button>
       </div>
 
 	</form>
 </section>
+</div>
+</div>
             

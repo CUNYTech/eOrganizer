@@ -17,8 +17,11 @@ angular.module('mean').config(['$routeProvider',
         when('/', {
             templateUrl: 'views/index.html'
         }).
-        when('/profile', {
+        when('/profile/profile', {
             templateUrl: 'views/profile/profile.html'
+        }).
+         when('/profile/history', {
+            templateUrl: 'views/profile/history.html'
         }).
         when('/profile/edit', {
             templateUrl: 'views/profile/edit.html'

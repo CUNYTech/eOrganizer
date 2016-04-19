@@ -10,7 +10,7 @@ angular.module('mean.system').controller('HeaderController', ['$scope', 'Global'
     },
     {
     	"title": "My Profile",
-    	"link": "/profile/profile"
+    	"link": "profile/profile"
     }];
     
     $scope.isCollapsed = true;

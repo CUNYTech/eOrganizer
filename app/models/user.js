@@ -21,7 +21,11 @@ module.exports = function(sequelize, DataTypes) {
 			twitterKey: DataTypes.STRING,
 			twitterSecret: DataTypes.STRING,
 			github: DataTypes.STRING,
-			openId: DataTypes.STRING
+			openId: DataTypes.STRING,
+
+			cunyCoins: DataTypes.INTEGER,
+			school: DataTypes.STRING,
+			major: DataTypes.STRING
 		},
 		{
 			instanceMethods: {

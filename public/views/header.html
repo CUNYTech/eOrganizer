@@ -1,11 +1,13 @@
 
 <div class="navbar-inner" data-ng-controller="HeaderController">
-    <ul class="nav">
+    <ul class="nav pull-left">
+        <li class="navbar-brand">
+        <img alt="Brand" src="./img/cunycode/CUNY_Logo.jpg" style="width:30%;height:15%;">
         <li>
-            <a class="brand" href="#/"><i class="fa fa-home"></i> &nbsp; e-Organizer</a>
+            <a class="brand" href="#/"> e-Organizer</a>
         </li>
         <li data-ng-repeat="item in menu" data-ng-show="global.user" ui-route="/{{item.link}}" ng-class="{active: $uiRoute}">
-            <a href="#!/{{item.link}}">{{item.title}}</a>
+            <a href="#/{{item.link}}">{{item.title}}</a>
         </li>
     </ul>
     <ul class="nav pull-right" data-ng-hide="global.authenticated">

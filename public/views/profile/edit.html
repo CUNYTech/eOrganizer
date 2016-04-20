@@ -1,0 +1,76 @@
+<div class="container-fluid">
+<div class="col-lg-6">
+<section data-ng-controller="HeaderController" data-ng-init="">
+    <form class="form-horizontal" data-ng-submit="updateProfile()" enctype="multipart/form-data">
+        <div>
+
+          <div class="profile-userpic">
+          <img src=''>
+            <a class="btn btn-sq-lg btn-primary">
+                <i class="fa fa-user fa-5x"></i> 
+                </a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 <img src="./img/cunycode/coins.png" alt="cunycoins">
+                 CUNY Coins: <span id="cunyCoins"> {{global.user.cunyCoins}} </span>
+            </div>
+            
+          <br>
+          <div class="control-group">
+          <label class="control-label" for="upload"> Upload profile picture:</label>
+            <div class="controls">
+             <input type="file" name="file" style="text-align: center;">
+            </div>
+          </div>
+
+		  <div class="control-group">
+			<label class="control-label" for="name">Full Name</label>
+			<div class="controls">
+				<input type="text" id="username" data-ng-mode="user.username" placeholder="{{global.user.username}}" required> 
+			</div>
+          </div>
+
+		<div class="control-group">
+			<label class="control-label" for="email">Email</label>
+			<div class="controls">
+				<input type="text" data-ng-model="user.email" id="email" placeholder="{{global.user.email}}" required>
+			</div>
+		</div>
+
+        <!-- <div class="control-group">
+            <label class="control-label" for="password">Password</label>
+            <div class="controls">
+                <input type="text" data-ng-model="global.user.password" id="password" placeholder="{{global.user.hashedPassword}}" required>
+            </div>
+        </div> -->
+
+        <div class="control-group">
+            <label class="control-label" for="school">School</label>
+            <div class="controls">
+                <input type="text" data-ng-model="user.school" id="school" placeholder="{{global.user.school}}">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="major"> Major </label>
+            <div class="controls">
+                <input type="text" data-ng-model="user.major" id="major" placeholder="{{global.user.major}}">
+            </div>
+        </div>
+	
+          <div class="control-group">
+             <div class="controls">
+               <button ng-onlick="updateProfile()" class="btn btn-success btn-lg"> Submit </button>
+               <a class="btn btn-danger btn-lg" href="/#/profile/profile">Cancel</a>
+            </div>
+         </div>
+
+             </div>
+            <!--  <button type="submit" class="btn btn-success btn-lg">Save</button> -->
+             
+        </button>
+      </div>
+
+	</form>
+</section>
+</div>
+</div>
+            

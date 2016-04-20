@@ -1,4 +1,4 @@
-angular.module('mean.articles').controller('ArticlesController', ['$scope', '$routeParams', '$location', 'Global', 'Articles', function ($scope, $routeParams, $location, Global, Articles) {
+angular.module('mean.articles').controller('ArticlesController', ['$scope', '$routeParams', '$location', 'Global', 'Articles',function ($scope, $routeParams, $location, Global, Articles) {
     $scope.global = Global;
         
     $scope.theBoolean=true;
@@ -62,4 +62,21 @@ angular.module('mean.articles').controller('ArticlesController', ['$scope', '$ro
 
     $scope.haha = function() {
     };    
+
+
+    // $scope.updateProfile = function(){
+
+    //  // var user = $scope.global.user;
+    //  // if (!user.updated) {
+    //  //        user.updated = [];
+    //  //    }
+
+    //  //    user.updated.push(new Date().getTime());
+
+    //  //    user.$update(function() {
+    //  //        $location.path('profile/profile');
+    //  //    });
+    // };
+
+
 }]);

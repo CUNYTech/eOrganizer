@@ -1,10 +1,13 @@
+
 <div class="navbar-inner" data-ng-controller="HeaderController">
-    <ul class="nav">
+    <ul class="nav pull-left">
+        <li class="navbar-brand">
+        <img alt="Brand" src="./img/cunycode/CUNY_Logo.jpg" style="width:30%;height:15%;">
         <li>
-            <a class="brand" href="#!/">e-Organizer</a>
+            <a class="brand" href="#/"> e-Organizer</a>
         </li>
         <li data-ng-repeat="item in menu" data-ng-show="global.user" ui-route="/{{item.link}}" ng-class="{active: $uiRoute}">
-            <a href="#!/{{item.link}}">{{item.title}}</a>
+            <a href="#/{{item.link}}">{{item.title}}</a>
         </li>
     </ul>
     <ul class="nav pull-right" data-ng-hide="global.authenticated">
@@ -14,7 +17,10 @@
         <li><a href="signin">Signin</a>
         </li>
     </ul>
-    <ul class="nav pull-right" data-ng-show="global.authenticated">
-        <li><a href="/signout">Signout, {{global.user.name}}</a>
+    <ul class="nav navbar-nav pull-right" data-ng-show="global.authenticated">
+            <li>
+            <a href="" ><i class="fa fa-user"></i> {{global.user.username}} <b class="caret"></b></a>
+            </li>
+            <li><a href="/signout">Signout</a></li>
     </ul>
 </div>

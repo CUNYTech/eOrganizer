@@ -6,18 +6,13 @@ module.exports = function(sequelize, DataTypes) {
 			title: DataTypes.STRING,
 			content: DataTypes.TEXT,
 			isPrivate: DataTypes.BOOLEAN,
-
-			date: DataTypes.DATE,
-			time: DataTypes.TIME,
-			location: DataTypes.STRING,
-			catogory: DataTypes.STRING,
-			rewardCoins: DataTypes.INTEGER
-
-
+			eventDate: DataTypes.DATEONLY,
+			eventTime: DataTypes.TIME
 		},
 		{
 			associate: function(models){
 				Article.belongsTo(models.User);
+				Article.hasMany(models.Attendee);
 			}
 		}
 	);
